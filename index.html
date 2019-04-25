@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/main.css">
-    <link rel="stylesheet" href="dist/header.css">
+    <!--<link rel="stylesheet" href="dist/header.css">-->
 
 </head>
 <body>
@@ -47,23 +47,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <!--<ul class="navbar-nav mr-auto">-->
-                    <!--<li class="nav-item active">-->
-                    <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--<a class="nav-link" href="#">Features</a>-->
-                    <!--</li>-->
-                    <!--<li class="nav-item">-->
-                    <!--<a class="nav-link" href="#">Pricing</a>-->
-                    <!--</li>-->
-                    <!--</ul>-->
-
-                    <!--<span class="navbar-text">-->
-                    <!--Navbar text with an inline element-->
-                    <!--</span>-->
-
-                    <!--======-->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Главная</a>
@@ -95,83 +78,139 @@
         </div>
     </div>
 </header>
-
-<section class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-sm-12"></div>
-            <div class="col-md-6 col-sm-12">
-                <div class="row banner-column">
-                    <div class="description">
+<main>
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12"></div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row banner-column">
+                        <div class="description">
                             <span> Всю необходимую информацию о том, как и в каком центре
                                 сделать МРТ, КТ и рентген исследованиях, cравнить интересующие
                                 Вас клиники, цены на диагностику и порядок прохождения
                                 процедур, а также записаться на исследование можно по
                                 телефону 8 (812) 385-77-56
                             </span>
+                        </div>
+                        <div>
+                            <span class="bold">Оставьте свой номер, а мы Вам перезвоним</span>
+                            <form action="hendler.php">
+                                <div class="contact-us">
+                                    <input type="text" placeholder="+380" name="phone">
+                                    <button>Отправить</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div>
-                        <span class="bold">Оставьте свой номер, а мы Вам перезвоним</span>
-                        <form action="hendler.php">
-                            <div class="contact-us">
-                                <input type="text" placeholder="+380" name="phone">
-                                <button>Отправить</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 service-1">
+                    <div class="circle-icon">
+                        <div class="for-icon">
+                            <img src="asssets/best_treatment.png" alt="">
+                        </div>
+                    </div>
+                    <p class="header">Best Treatment</p>
+                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 service-2">
+                    <div class="circle-icon">
+                        <div class="for-icon">
+                            <img src="asssets/emergency_help.png" alt="">
+                        </div>
+                    </div>
+                    <p class="header">Best Treatment</p>
+                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 service-3">
+                    <div class="circle-icon">
+                        <div class="for-icon">
+                            <img src="asssets/medical_staff.png" alt="">
+                        </div>
+                    </div>
+                    <p class="header">Best Treatment</p>
+                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
+                </div>
+                <div class="col-sm-6 col-md-3 service-4">
+                    <div class="circle-icon">
+                        <div class="for-icon">
+                            <img src="asssets/qualified_doctors.png" alt="">
+                        </div>
+                    </div>
+                    <p class="header">Best Treatment</p>
+                    <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clinics">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                       aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                       aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                       aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="card-clinic">
+                                <div class="row header-clinic">
+                                    <div>
+                                        <img src="asssets/logo_clinic.png" alt="logo">
+                                    </div>
+                                    <div>
+                                        <div><span class="bold">Название клиники</span></div>
+                                        <div><span class="adres">Ленинский проспект, 160, Ленинский проспект</span></div>
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <span>Что такое текст «рыба» знают все, кто работает с версткой журналов,
+дизайном и разработкой сайтов. Этот текст служит для демонстрации того,
+как контент впоследствии будет выглядеть на готовой странице, чтобы
+увидеть, правильно ли размещаются абзацы, отступы, хорошо ли...</span>
+                                </div>
+                                <div class="row footer">
+                                    <div><span>8800 12345</span></div>
+                                    <div>
+                                        <button>Заказать</button>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card-clinic">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2...Папугая</div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3...Папугая</div>
             </div>
         </div>
-    </div>
-
-</section>
-<section class="service">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-3 service-1">
-                <div class="circle-icon">
-                    <div class="for-icon">
-                        <img src="asssets/best_treatment.png" alt="">
-                    </div>
-                </div>
-                <p class="header">Best Treatment</p>
-                <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium.</p>
-            </div>
-            <div class="col-md-3 col-sm-6 service-2">
-                <div class="circle-icon">
-                    <div class="for-icon">
-                        <img src="asssets/emergency_help.png" alt="">
-                    </div>
-                </div>
-                <p class="header">Best Treatment</p>
-                <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium.</p>
-            </div>
-            <div class="col-sm-6 col-md-3 service-3">
-                <div class="circle-icon">
-                    <div class="for-icon">
-                        <img src="asssets/medical_staff.png" alt="">
-                    </div>
-                </div>
-                <p class="header">Best Treatment</p>
-                <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium.</p>
-            </div>
-            <div class="col-sm-6 col-md-3 service-4">
-                <div class="circle-icon">
-                    <div class="for-icon">
-                        <img src="asssets/qualified_doctors.png" alt="">
-                    </div>
-                </div>
-                <p class="header">Best Treatment</p>
-                <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremque laudantium.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
+    </section>
+</main>
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

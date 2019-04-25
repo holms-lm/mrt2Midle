@@ -1,0 +1,36 @@
+@import "header";
+section.clinics {
+  padding: 0px 45px;
+  .card-clinic {
+    height: 324px;
+    border: 3px solid $mainColor;
+    margin-top: 45px;
+  }
+  .card-clinic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .header-clinic {
+      justify-content: space-between;
+      margin: 0 5px;
+      .bold{
+        font-size: 23px;
+        font-weight: bold;
+        text-align: right;
+      }
+      .adres {
+        color: #67bdd8;
+        font-size: 12px;
+
+      }
+    }
+    .text {
+      padding: 5px 15px;
+      margin-top: 10px;
+    }
+    .footer {
+      justify-content: space-between;
+      margin: 0 15px;
+    }
+  }
+}
