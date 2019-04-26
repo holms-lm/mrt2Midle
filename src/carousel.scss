@@ -1,9 +1,32 @@
 section.carusel {
+  .main-row {
+    .flex-col {
+      display: flex;
+      align-content: space-between;
+      flex-wrap: wrap;
+    }
+    .v-align {
+      flex-basis: 100%;
+    }
+  }
+  .post-header {
+    color: $textColor;
+  }
   .carousel-item {
     img {
       max-width: 100%;
     }
+    @media (max-width: 1200px) {
+      .hide-on-min {
+        display: none;
+      }
+    }
     .post-text {
+      font-size: 10px;
+    }
+  }
+  #carouselTestimonial {
+    p {
       font-size: 10px;
     }
   }

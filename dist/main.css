@@ -116,6 +116,9 @@ section.service .header {
 section.service .description {
   font-size: 10pt; }
 
+body {
+  color: #737677; }
+
 section.clinics {
   padding: 45px 0px; }
   section.clinics .tab-content {
@@ -182,10 +185,28 @@ section.clinics {
       font-weight: bold;
       padding: 7px; }
 
+section.carusel .main-row .flex-col {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap; }
+
+section.carusel .main-row .v-align {
+  flex-basis: 100%; }
+
+section.carusel .post-header {
+  color: #737677; }
+
 section.carusel .carousel-item img {
   max-width: 100%; }
 
+@media (max-width: 1200px) {
+  section.carusel .carousel-item .hide-on-min {
+    display: none; } }
+
 section.carusel .carousel-item .post-text {
+  font-size: 10px; }
+
+section.carusel #carouselTestimonial p {
   font-size: 10px; }
 
 section.carusel .control-left-side {
