@@ -3,6 +3,11 @@ body {
 }
 section.clinics {
   padding: 45px 0px;
+  span.hide-on-min {
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
   .tab-content {
     padding: 20px 10px;
     border: 1px solid #dee2e6;
@@ -18,7 +23,7 @@ section.clinics {
     //margin-bottom: 20px;
   }
   .card-clinic {
-    height: 183px;
+    min-height: 183px;
     border: 3px solid $mainColor;
     margin-top: 30px;
     padding: 20px 5px 10px;
@@ -33,6 +38,9 @@ section.clinics {
       img {
         width: 145px;
         height: auto;
+        @media (max-width: 968px)  {
+          display: none;
+        }
       }
       div.name {
         //margin-top: -3px;
@@ -45,10 +53,10 @@ section.clinics {
         display: block;
         margin-left: auto;
       }
-      div.adres {
+      div.address {
         //margin-top: -5px
       }
-      span.adres {
+      span.address {
         color: #67bdd8;
         font-size: 10px;
       }
