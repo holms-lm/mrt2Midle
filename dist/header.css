@@ -80,7 +80,7 @@ section.banner {
     border: 0px; }
 
 section.service .col-md-3 {
-  height: 324px; }
+  height: 280px; }
 
 section.service .service-1 {
   background-color: #43b1d2; }
@@ -100,7 +100,7 @@ section.service .circle-icon {
   background-color: white;
   padding: 10px;
   border-radius: 50%;
-  margin: 80px auto 15px auto; }
+  margin: 60px auto 15px auto; }
   section.service .circle-icon div.for-icon {
     margin: 0 auto;
     width: fit-content; }
