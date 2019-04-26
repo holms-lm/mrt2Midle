@@ -1,5 +1,8 @@
-@import "header";
+$mainColor: #43b1d2;
+$menuColor: #494848;
+$colorBanner: #cbd4e6;
 $grayColor: #e5e9f2;
+$greenButton: #37c3a8;
 @mixin buttonStyle($bgColor, $color) {
   border: none;
   border-radius: 5px;
@@ -9,82 +12,7 @@ $grayColor: #e5e9f2;
   font-weight: bold;
   padding: 7px;
 }
-section.clinics {
-  padding: 45px 0px;
-  .tab-content {
-    padding: 20px 10px;
-    border: 1px solid #dee2e6;
-    border-top: none;
-  }
-  .nav-item{
-    a{
-      color: $mainColor;
-      font-weight: bold;
-    }
-  }
-  #myTab {
-    //margin-bottom: 20px;
-  }
-  .card-clinic {
-    height: 183px;
-    border: 3px solid $mainColor;
-    margin-top: 30px;
-    padding: 20px 5px 10px;
-  }
-  .card-clinic {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    .header-clinic {
-      justify-content: space-between;
-      margin: 0 5px;
-      img {
-        width: 145px;
-        height: auto;
-      }
-      div.name {
-        //margin-top: -3px;
-      }
-      .bold{
-        font-size: 20px;
-        font-weight: bold;
-        text-align: right;
-        line-height: 20px;
-        display: block;
-        margin-left: auto;
-      }
-      div.adres {
-        //margin-top: -5px
-      }
-      span.adres {
-        color: #67bdd8;
-        font-size: 10px;
-      }
-    }
-    .text {
-      padding: 5px 15px;
-      margin-top: 10px;
-      font-size: 10px;
-      line-height: 12px;
-    }
-    .footer {
-      justify-content: space-between;
-      margin: 0 15px;
-      span {
-        font-size: 11px;
-        font-weight: bold;
-      }
-      button {
-        @include buttonStyle(#37c3a8, white);
-      }
-    }
-  }
-  .tab-footer {
-    margin-top: 45px;
-    margin-bottom: 15px;
-    text-align: center;
-    button {
-      @include buttonStyle($grayColor, $menuColor)
-    }
-  }
-}
+@import "header";
+@import "banner";
+@import "main_content";
+@import "carousel";

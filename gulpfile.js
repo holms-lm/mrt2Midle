@@ -7,7 +7,7 @@ var terser = require('gulp-terser');
 sass.compiler = require('node-sass');
 
 gulp.task('style', function () {
-    return gulp.src('./src/**/*.scss')
+    return gulp.src('./src/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./dist'));
 });

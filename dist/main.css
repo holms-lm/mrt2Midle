@@ -181,3 +181,43 @@ section.clinics {
       font-size: 11px;
       font-weight: bold;
       padding: 7px; }
+
+section.carusel .carousel-item img {
+  max-width: 100%; }
+
+section.carusel .carousel-item .post-text {
+  font-size: 10px; }
+
+section.carusel .control-left-side {
+  display: flex; }
+
+section.carusel .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  background: #ccd4e7;
+  margin: 10px; }
+
+section.carusel .carousel-control-next-icon, section.carusel .carousel-control-prev-icon {
+  width: 10px;
+  height: 10px; }
+
+section.carusel .icon-button {
+  width: auto;
+  height: 100%;
+  background: #ccd4e7; }
+
+section.carusel .for-button {
+  text-align: end; }
+
+section.carusel #readMore {
+  border: none;
+  border-radius: 5px;
+  background-color: #37c3a8;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 7px;
+  margin-top: 5px; }
