@@ -50,6 +50,12 @@ section.carusel {
     width: 10px;
     height: 10px;
   }
+  .carousel-control-prev-icon {
+    background-image: url("../asssets/arrow-left.png");
+  }
+  .carousel-control-next-icon {
+    background-image: url("../asssets/arrow-right.png");
+  }
   .icon-button {
     width: auto;
     height: 100%;

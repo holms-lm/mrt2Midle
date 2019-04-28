@@ -7,6 +7,7 @@
     <title>MRT</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
@@ -39,7 +40,6 @@
         </div>
         <div class="row for-nav">
             <nav class="navbar navbar-expand-lg navbar-light bg-light1">
-                <!--<a class="navbar-brand" href="#">Navbar w/ text</a>-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,8 @@
                             <a class="nav-link active" href="#">Главная</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Услуги</a>
+                            <a class="nav-link" href="#">Услуги<img src="asssets/arrow_down.png" alt="icon"></a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Клиники и кабинеты</a>
@@ -880,20 +881,22 @@
     </section>
 </main>
 <section class="prefooter">
-    <div class="row-call-back">
-        <div class="for-logo">
-            <img src="asssets/logo.png" alt="logo">
-        </div>
-        <div class="call-back">
-            <div class="bold">Заказать звонок:</div>
-            <div class="for-form">
-                <form action="hendler.php">
-                    <div class="contact-us">
-                        <input type="text" placeholder="+380" name="phone">
-                        <button>Отправить</button>
-                    </div>
-                </form>
+    <div class="container">
+        <div class="row-call-back">
+            <div class="for-logo">
+                <img src="asssets/logo.png" alt="logo">
+            </div>
+            <div class="call-back">
+                <div class="bold">Заказать звонок:</div>
+                <div class="for-form">
+                    <form action="hendler.php">
+                        <div class="contact-us">
+                            <input type="text" placeholder="+380" name="phone">
+                            <button>Отправить</button>
+                        </div>
+                    </form>
 
+                </div>
             </div>
         </div>
     </div>
@@ -902,7 +905,7 @@
     <div class="main-footer">
         <div class="container">
             <div class="row for-links">
-                <div class="col-4 col-left">
+                <div class="col-12 col-sm-6 col-lg-4 col-left">
                     <div class="header">
                         <h4>Get in Touch</h4>
                     </div>
@@ -928,7 +931,7 @@
                     </div>
 
                 </div>
-                <div class="col-2 col-midle">
+                <div class="col-12 col-sm-6 col-lg-2 col-midle">
                     <div class="header">
                         <h4>Quick Links</h4>
                     </div>
@@ -969,7 +972,7 @@
                     </div>
 
                 </div>
-                <div class="col-3 col-midle">
+                <div class="col-12 col-sm-6 col-lg-3 col-midle">
                     <div class="header">
                         <h4>Our Services</h4>
                     </div>
@@ -1009,28 +1012,35 @@
                     </div>
                 </div>
                 </div>
-                <div class="col-3">
+                <div class="col-12 col-sm-6 col-lg-3">
                     <div class="header">
                         <h4>Enquiry Form</h4>
                     </div>
                     <div>
                         <form action="headler.php">
-                            <input type="text" name="name">
-                            <input type="text" placeholder="+380" name="phone">
-                            <textarea name="massage" id="massage" cols="24" rows="5"></textarea>
-                            <button id="buttonInFooter">Отправить</button>
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" placeholder="Phone" name="phone">
+                            <textarea name="message" id="message" cols="24" rows="5" placeholder="Message"></textarea>
+                            <button id="buttonInFooter">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
+            <div class="row row-social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-vk"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
         </div>
     </div>
     <div class="copyright">
+        <!--<img src="asssets/футер.JPG" alt="">-->
         <div class="container">
             <div class="row row-copyright">
                 <div class="col-12 col-lg-5"></div>
                 <div class="col-12 col-lg-2 col-copyright">
-                    <span class="white">Copiright © 2017</span>
+                    <span class="white">Copyright © 2017</span>
                 </div>
                 <div class="col-12 col-lg-5"></div>
 

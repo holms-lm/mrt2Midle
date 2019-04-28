@@ -37,13 +37,13 @@ section.banner{
     color: $menuColor;
     background-color: #ffffff00;
     border: 1px solid $menuColor;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin-left: -5px;
   }
   input {
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: 0px;
   }
 }
