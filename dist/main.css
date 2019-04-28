@@ -250,3 +250,35 @@ section.carusel #readMore {
   font-weight: bold;
   padding: 7px;
   margin-top: 5px; }
+
+.row-call-back {
+  min-height: 127px;
+  background-color: #43b1d2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px; }
+  .row-call-back .bold {
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+    color: white; }
+  .row-call-back .for-form {
+    display: inline-block;
+    margin-left: 10px; }
+  .row-call-back .contact-us {
+    opacity: .8; }
+    .row-call-back .contact-us button {
+      color: #494848;
+      background-color: #e5e9f2;
+      border: 1px solid #494848;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      margin-left: -5px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .row-call-back .contact-us input {
+      border-radius: 5px;
+      border: 0px; }

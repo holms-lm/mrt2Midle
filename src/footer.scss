@@ -1,0 +1,40 @@
+.row-call-back {
+  min-height: 127px;
+  background-color: $mainColor;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  .for-logo {
+
+  }
+  .bold {
+    display: inline-block;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+  }
+  .for-form {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .contact-us {
+    opacity: .8;
+    button {
+      color: $menuColor;
+      background-color: $grayColor;
+      border: 1px solid $menuColor;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      margin-left: -5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    input {
+      border-radius: 5px;
+      border: 0px;
+    }
+  }
+}
